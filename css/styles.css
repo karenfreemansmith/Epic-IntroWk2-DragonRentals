@@ -1,20 +1,21 @@
 body {
   background-image: url("../img/dragon.jpg");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-nav li {
-  width: 19%;
-  display: inline-block;
+h1, h2 {
   text-align: center;
-  font-size: 1.5em;
-  font-family: arial, sans-serif;
-  box-sizing: border-box;
 }
 
-nav li:hover {
-  border: solid blue 1px;
+h1 {
+  padding-top: 25%;
+  font-size: 4.5em;
+}
+
+h2 {
+  font-style: italic;
+  padding-bottom: 10%;
 }
 
 a {
@@ -29,4 +30,17 @@ a:hover {
 img {
   width: 480px;
   margin-right: 50%;
+}
+
+nav li {
+  width: 19%;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+
+nav li:hover {
+  border: solid blue 1px;
 }
