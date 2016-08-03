@@ -1,3 +1,22 @@
-nav {
-  dispaly: inline-block;
+
+nav li {
+  width: 19%;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+
+nav li:hover {
+  border: solid blue 1px;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+}
+
+a:hover {
+  color: blue;
 }
