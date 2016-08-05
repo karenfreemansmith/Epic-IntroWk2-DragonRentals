@@ -1,14 +1,13 @@
-# :dragon_face: [Dragons-R-Us](http://karenfreemansmith.github.io/shiva) :snake:
-
+# :dragon_face: [Dragons-R-Us](http://karenfreemansmith.github.io/dragons) :snake:
 
 __Version 1.0.0: August 2, 2016__
-## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
+#### by [Karen Freeman-Smith](http://karenfreemansmith.github.io) and [Stephen Newkirk](https://github.com/NewkirkS)
 
 ### Description
-__*Website for a dragon rental/sales business*__
+__*Dragon sales and rental site to practice html.*__
 
 ### Setup/Installation
-*None required. Clone or download and extract to use, or click link above to view.*
+*Clone or download and extract to use, or click link above to view.*
 
 ### Support & Contact
 For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
@@ -17,9 +16,9 @@ For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
 * No bugs, only undocumented features!
 
 ### Technologies Used
-###### HTML, CSS
+#### HTML, CSS
 
 ### Legal
 *Licensed under the GNU General Public License v3.0*
 
-Copyright (c) 2016 **_Karen Freeman-Smith_**
+Copyright (c) 2016 **_Karen Freeman-Smith_&_Stephen Newkirk**
