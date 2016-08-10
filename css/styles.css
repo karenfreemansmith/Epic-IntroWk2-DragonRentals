@@ -59,6 +59,10 @@ nav li:hover {
   border: solid blue 1px;
 }
 
-#buy {
+.buy {
   display: none;
+}
+
+#order {
+  /* display:none; */
 }

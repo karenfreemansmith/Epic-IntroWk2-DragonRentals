@@ -32,7 +32,7 @@
 
       <h3>Price List</h3>
 
-      <div id="rent">
+      <div class="rent">
         <ul>
           <div>
             <li>Daily Rentals
@@ -64,7 +64,7 @@
         </ul>
       </div>
 
-      <div id="buy">
+      <div class="buy">
         <h3>Typical Used Dragon Prices</h3>
         <ul>
           <li>European Dragons: $2,500,000</li>
@@ -104,6 +104,24 @@
       </div>
 
       <div class="form-group">
+        <label for="dragon">Type of Dragon: </label>
+        <select id="dragon" class="form-control">
+          <option value="European">European</option>
+          <option value="Chinese">Chinese</option>
+          <option value="Komodo">Komodo</option>
+        </select>
+      </div>
+
+      <div class="form-group rent">
+        <label for="rentCost">Type of rent: </label>
+        <select id="rentCost" class="form-control">
+          <option value="Daily">Daily</option>
+          <option value="Weekly">Weekly</option>
+          <option value="Monthly">Monthly</option>
+        </select>
+      </div>
+
+      <div class="form-group">
         <label for="ship">Shopping cost: </label>
         <select id="ship" class="form-control">
           <option value="Pickup">Pickup: FREE!!!</option>
@@ -114,8 +132,24 @@
 
       <button type="submit" class="btn">Submit</button>
     </form>
+    <div id="order">
+      <p>
+        Thank you for orderin a dragon from Dragons-R-Us. We will have your dragon to you via <span class="ship"></span> soon.
+      </p>
+      <p>
+        Your dragon is being shipped to:
+      </p>
+      <span class="name"></span>
+      <br><span class="address"></span>
+      <br><span class="city"></span>,
+      <span class="state"></span>
+      <span class="zip"></span>
+      <p>
+      <p>Your credit card has been charged for <span class="price"></span>. We value your privacy and take great care to protect your financial information.</p>
 
-    <h2><a href="#">Contact Us To Reserve Your Dragon Today</a></h2>
+      <span class="dragon"></span>
+      <span class="rentCost"></span>
+    </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
   </body>
