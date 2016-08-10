@@ -47,7 +47,7 @@ img {
 }
 
 nav li {
-  width: 19%;
+  width: 16%;
   display: inline-block;
   text-align: center;
   font-size: 1.5em;
@@ -57,4 +57,8 @@ nav li {
 
 nav li:hover {
   border: solid blue 1px;
+}
+
+#buy {
+  display: none;
 }
