@@ -82,10 +82,11 @@ $(document).ready(function() {
     $(".ship").text($("#ship").val());
     $(".dragon").text($("#dragon").val());
     $(".rentCost").text($("#rentCost").val());
-    $(".order").show();
+
 
      event.preventDefault();
     $("form").hide();
+    $("#order").show();
   });
 
 });

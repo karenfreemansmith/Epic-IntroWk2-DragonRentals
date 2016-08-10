@@ -6,149 +6,135 @@
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dragons.html">Inventory</a></li>
-        <li><a href="rent.html">Rent</a></li>
-        <li><a href="buy.html">Buy</a></li>
-        <li><a href="order.html">Order</a></li>
-        <li><a href="help.html">Help</a></li>
-      </ul>
-    </nav>
-    <h1>Dragons-R-Us</h1>
-    <h2>Rent a Dragon</h2>
-    <p>
-      Most people find it more economical to rent a dragon for special occasions
-      than to own one outright. (Dragons do eat quite a bit!) Our dragons can
-      be rented by the day, week, or month.
-    </p>
-
-    <form>
-
-
-      <input type="radio" name="type" value="buy"> Buy<br>
-      <input type="radio" name="type" value="rent" checked> Rent
-
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dragons.html">Inventory</a></li>
+          <li><a href="rent.html">Rent</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+      <h1>Dragons-R-Us</h1>
+      <h2>Order Your Dragon Now</h2>
       <h3>Price List</h3>
-
-      <div class="rent">
-        <ul>
-          <div>
-            <li>Daily Rentals
-              <ol>
-                <li>European Dragon: $10,000</li>
-                <li>Chinese Dragon: $1000</li>
-                <li>Komodo Dragon: $100</li>
-              </ol>
-            </li>
+      <form>
+        <input type="radio" name="type" value="buy"> Buy<br>
+        <input type="radio" name="type" value="rent" checked> Rent
+        <div class="rent row">
+          <ul>
+            <div class="col-xs-4">
+              <li>Daily Rentals
+                <ol>
+                  <li>European Dragon: $10,000</li>
+                  <li>Chinese Dragon: $1000</li>
+                  <li>Komodo Dragon: $100</li>
+                </ol>
+              </li>
+            </div>
+            <div class="col-xs-4">
+              <li>Weekly Rentals
+                <ol>
+                  <li>European Dragon: $50,000</li>
+                  <li>Chinese Dragon: $5000</li>
+                  <li>Komodo Dragon: $500</li>
+                </ol>
+              </li>
+            </div>
+            <div class="col-xs-4">
+              <li>Monthly Rentals
+                <ol>
+                  <li>European Dragon: $150,000</li>
+                  <li>Chinese Dragon: $15,000</li>
+                  <li>Komodo Dragon: $1500</li>
+                </ol>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="buy row">
+          <div class="col-xs-4"></div>
+          <div class="col-xs-4">
+            <ul>
+              <li>European Dragons: $2,500,000</li>
+              <li>Chinese Dragon: $250,000</li>
+              <li>Komodo Dragon: $25,000</li>
+            </ul>
           </div>
-          <div>
-            <li>Weekly Rentals
-              <ol>
-                <li>European Dragon: $50,000</li>
-                <li>Chinese Dragon: $5000</li>
-                <li>Komodo Dragon: $500</li>
-              </ol>
-            </li>
+          <div class="col-xs-4"></div>
+        </div>
+        <div class="row">
+          <div class="form-group col-xs-4">
+            <label for="animal">Name: </label>
+            <input id="name" class="form-control" type="text">
           </div>
-          <div>
-            <li>Monthly Rentals
-              <ol>
-                <li>European Dragon: $150,000</li>
-                <li>Chinese Dragon: $15,000</li>
-                <li>Komodo Dragon: $1500</li>
-              </ol>
-            </li>
+          <div class="form-group col-xs-4">
+            <label for="city">Address: </label>
+            <input id="address" class="form-control" type="text">
           </div>
-        </ul>
+          <div class="form-group col-xs-4">
+            <label for="city">City: </label>
+            <input id="city" class="form-control" type="text">
+          </div>
+          <div class="form-group col-xs-4">
+            <label for="city">state: </label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          <div class="form-group col-xs-4">
+            <label for="city">Zip code: </label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+          <div class="form-group col-xs-4">
+            <label for="credit">Credit Card Number: </label>
+            <input id="credit" class="form-control" type="text">
+          </div>
+          <div class="form-group col-xs-4">
+            <label for="dragon">Type of Dragon: </label>
+            <select id="dragon" class="form-control">
+              <option value="European">European</option>
+              <option value="Chinese">Chinese</option>
+              <option value="Komodo">Komodo</option>
+            </select>
+          </div>
+          <div class="form-group rent col-xs-4">
+            <label for="rentCost">Type of rent: </label>
+            <select id="rentCost" class="form-control">
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Monthly">Monthly</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-4">
+            <label for="ship">Shopping cost: </label>
+            <select id="ship" class="form-control">
+              <option value="Pickup">Pickup: FREE!!!</option>
+              <option value="overNight">Over Night-Dragon Express: $9999.99</option>
+              <option value="Week">Escargo Mail (takes 6-8 weeks): $1.95</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        </form>
+
+      <div id="order">
+        <p>
+          Thank you for orderin a dragon from Dragons-R-Us. We will have your dragon to you via <span class="ship"></span> soon.
+        </p>
+        <p>
+          Your dragon is being shipped to:
+        </p>
+        <span class="name"></span>
+        <br><span class="address"></span>
+        <br><span class="city"></span>,
+        <span class="state"></span>
+        <span class="zip"></span>
+        <p>
+        <p>Your credit card has been charged for <span class="price"></span>. We value your privacy and take great care to protect your financial information.</p>
+        <span class="dragon"></span>
+        <span class="rentCost"></span>
       </div>
-
-      <div class="buy">
-        <h3>Typical Used Dragon Prices</h3>
-        <ul>
-          <li>European Dragons: $2,500,000</li>
-          <li>Chinese Dragon: $250,000</li>
-          <li>Komodo Dragon: $25,000</li>
-        </ul>
-      </div>
-
-      <div class="form-group">
-        <label for="animal">Name: </label>
-        <input id="name" class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="city">Address: </label>
-        <input id="address" class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="city">City: </label>
-        <input id="city" class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="city">state: </label>
-        <input id="state" class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="city">Zip code: </label>
-        <input id="zip" class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="credit">Credit Card Number: </label>
-        <input id="credit" class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="dragon">Type of Dragon: </label>
-        <select id="dragon" class="form-control">
-          <option value="European">European</option>
-          <option value="Chinese">Chinese</option>
-          <option value="Komodo">Komodo</option>
-        </select>
-      </div>
-
-      <div class="form-group rent">
-        <label for="rentCost">Type of rent: </label>
-        <select id="rentCost" class="form-control">
-          <option value="Daily">Daily</option>
-          <option value="Weekly">Weekly</option>
-          <option value="Monthly">Monthly</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="ship">Shopping cost: </label>
-        <select id="ship" class="form-control">
-          <option value="Pickup">Pickup: FREE!!!</option>
-          <option value="overNight">Over Night-Dragon Express: $9999.99</option>
-          <option value="Week">Escargo Mail (takes 6-8 weeks): $1.95</option>
-        </select>
-      </div>
-
-      <button type="submit" class="btn">Submit</button>
-    </form>
-    <div id="order">
-      <p>
-        Thank you for orderin a dragon from Dragons-R-Us. We will have your dragon to you via <span class="ship"></span> soon.
-      </p>
-      <p>
-        Your dragon is being shipped to:
-      </p>
-      <span class="name"></span>
-      <br><span class="address"></span>
-      <br><span class="city"></span>,
-      <span class="state"></span>
-      <span class="zip"></span>
-      <p>
-      <p>Your credit card has been charged for <span class="price"></span>. We value your privacy and take great care to protect your financial information.</p>
-
-      <span class="dragon"></span>
-      <span class="rentCost"></span>
     </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
